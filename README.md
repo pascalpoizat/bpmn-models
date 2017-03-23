@@ -7,6 +7,18 @@ This repository takes its origin as a side-effect of the [PARDI project](http://
 
 ![ANR logo](logo-anr-small.png)
 
+## model 0001-v0001
+
+**Examination management system**
+
+[model](models/e0001v0001.bpmn) [picture](pictures/e0001v0001.png)
+
+Example taken and slightly modified from: 
+
+*F. Chevrou, A. Hurault, and P. Queinnec: On the Diversity of Asynchronous Communication. FAC 28 2016*
+([link](http://doi.org/10.1007/s00165-016-0379-x))
+Modifications:
+- add parallelism- add inobservable tasks for taking coffee (in addition to sending the corresponding invitation) and working on the exam
 
 ## model 0002-v0001
 
@@ -16,4 +28,5 @@ This repository takes its origin as a side-effect of the [PARDI project](http://
 
 Example taken and slightly modified from: 
 
-*Jeremy W. Bryans, Wei Wei: Formal Analysis of BPMN Models Using Event-B. FMICS 2010 (DOI: 10.1007/978-3-642-15898-8_3).*Modifications:- adding of a marge exclusive gateway- modification of the data flows + adding data annotations
+*Jeremy W. Bryans, Wei Wei: Formal Analysis of BPMN Models Using Event-B. FMICS 2010*
+([link](http://doi.org/10.1007/978-3-642-15898-8_3))Modifications:- adding of a marge exclusive gateway- modification of the data flows + adding data annotations
