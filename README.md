@@ -11,7 +11,7 @@ This repository takes its origin as a side-effect of the [PARDI project](http://
 
 **Examination management system**
 
-[model](models/e0001v0001.bpmn) [picture](pictures/e0001v0001.png)
+[model](models/e0001v0001.bpmn) / [picture](pictures/e0001v0001.png)
 
 Example taken and slightly modified from: 
 
@@ -24,7 +24,7 @@ Example taken and slightly modified from:
 
 **Shift worker schedulling model**
 
-[model](models/e0002v0001.bpmn) [picture](pictures/e0002v0001.png)
+[model](models/e0002v0001.bpmn) / [picture](pictures/e0002v0001.png)
 
 Example taken and slightly modified from: 
 
