@@ -29,5 +29,5 @@ Example taken and slightly modified from:
 Example taken and slightly modified from: 
 
 *Jeremy W. Bryans, Wei Wei: Formal Analysis of BPMN Models Using Event-B. FMICS 2010*
-([link](http://doi.org/10.1007/978-3-642-15898-8_3))Modifications:- adding of a marge exclusive gateway- modification of the data flows + adding data annotations
-- removal of the timer on getting the response from workers
+([link](http://doi.org/10.1007/978-3-642-15898-8_3))Modifications:- add a merge gateway- modify the data flows and add data-related annotations
+- remove the timer on getting the response from workers
