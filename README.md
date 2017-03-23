@@ -8,3 +8,12 @@ This repository takes its origin as a side-effect of the [PARDI project](http://
 ![ANR logo](logo-anr-small.png)
 
 
+## model 0002-v0001
+
+**Shift worker schedulling model**
+
+[model](models/e0002v0001.bpmn) [picture](pictures/e0002v0001.png)
+
+Example taken and slightly modified from: 
+
+*Jeremy W. Bryans, Wei Wei: Formal Analysis of BPMN Models Using Event-B. FMICS 2010 (DOI: 10.1007/978-3-642-15898-8_3).*Modifications:- adding of a marge exclusive gateway- modification of the data flows + adding data annotations
