@@ -1,33 +1,64 @@
 # bpmn-models
 some bpmn models, home-made or taken from the literature
 
-If you use the models, please refer to the original publication when available. The objective is only to have a place with some models for evaluation purposes, not to get credit for others' work.
-
 This repository takes its origin as a side-effect of the [PARDI project](http://pardi.enseeiht.fr), funded by the French National Agency for Research.
 
 ![ANR logo](logo-anr-small.png)
 
-## model 0001-v0001
+## files
 
-**Examination management system**
+The models are available in directory [models](models), and
+graphical representation of them are in directory [pictures](pictures).
 
-[model](models/e0001v0001.bpmn) / [picture](pictures/e0001v0001.png)
+## description of the models
 
-Example taken and slightly modified from: 
+The set of models is described
+in file [models.yaml](models.yaml)
+using the [YAML format](http://yaml.org).
 
-*F. Chevrou, A. Hurault, and P. Queinnec: On the Diversity of Asynchronous Communication. FAC 28 2016*
-([link](http://doi.org/10.1007/s00165-016-0379-x))
-Modifications:
-- add parallelism- add inobservable tasks for taking coffee (in addition to sending the corresponding invitation) and working on the exam
+The (**unstable**) format of the file is:
 
-## model 0002-v0001
-
-**Shift worker schedulling model**
-
-[model](models/e0002v0001.bpmn) / [picture](pictures/e0002v0001.png)
-
-Example taken and slightly modified from: 
-
-*Jeremy W. Bryans, Wei Wei: Formal Analysis of BPMN Models Using Event-B. FMICS 2010*
-([link](http://doi.org/10.1007/978-3-642-15898-8_3))Modifications:- add a merge gateway- modify the data flows and add data-related annotations
-- remove the timer on getting the response from workers
+```yaml
+- id: &e0001
+  name: The Name of the Example
+  reference: >
+    A. Alice, B. Bob, and C. Charles.
+    An Example in BPMN.
+    Conference/Journal, Year.
+  doi: http://doi.org/xxx
+  variants: [
+    - id: &e0001v0001
+      references: []
+      doc: >
+        The description of variant 0001 of example 0001 (*e0001v0001).
+        This may use several lines.
+      changes: [
+        One line change number 1 wrt original version,
+        One line change number 2 wrt original version,
+        One line change number 3 wrt original version,
+        etc.
+      ]
+    - id: &e0001v0002
+      references: [*e0001v0001]
+      doc: >
+        The description of variant 0002 of example 0001 (*e0001v0002).
+        This may use several lines.
+      changes: [
+        One line change number 1 wrt *e0001v0001,
+        One line change number 2 wrt *e0001v0001,
+        One line change number 3 wrt *e0001v0001,
+        etc.
+      ]
+    - id: &e0001v0003
+      references: [*e0001v0001,*e0001v0002]
+      doc: >
+        The description of variant 0003 of example 0001 (*e0001v0003).
+        This may use several lines.
+      changes: [
+        One line change number 1 wrt *e0001v0001,
+        One line change number 1 wrt *e0001v0002,
+        One line change number 2 wrt *e0001v0002,
+        etc.
+      ]
+  ]
+```

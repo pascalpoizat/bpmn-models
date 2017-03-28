@@ -1,0 +1,83 @@
+#
+# bpmn-models, models description file
+#
+
+#- id: &e0001
+#  name: The Name of the Example
+#  reference: >
+#    A. Alice, B. Bob, and C. Charles.
+#    An Example in BPMN.
+#    Conference/Journal, Year.
+#  doi: http://doi.org/xxx
+#  variants: [
+#    - id: &e0001v0001
+#      references: []
+#      doc: >
+#        The description of variant 0001 of example 0001 (*e0001v0001).
+#        This may use several lines.
+#      changes: [
+#        One line change number 1 wrt original version,
+#        One line change number 2 wrt original version,
+#        One line change number 3 wrt original version,
+#        etc.
+#      ]
+#    - id: &e0001v0002
+#      references: [*e0001v0001]
+#      doc: >
+#        The description of variant 0002 of example 0001 (*e0001v0002).
+#        This may use several lines.
+#      changes: [
+#        One line change number 1 wrt *e0001v0001,
+#        One line change number 2 wrt *e0001v0001,
+#        One line change number 3 wrt *e0001v0001,
+#        etc.
+#      ]
+#    - id: &e0001v0003
+#      references: [*e0001v0001,*e0001v0002]
+#      doc: >
+#        The description of variant 0003 of example 0001 (*e0001v0003).
+#        This may use several lines.
+#      changes: [
+#        One line change number 1 wrt *e0001v0001,
+#        One line change number 1 wrt *e0001v0002,
+#        One line change number 2 wrt *e0001v0002,
+#        etc.
+#      ]
+#  ]
+
+- id: &e0001
+  name: Examination management system
+  reference: >
+    F. Chevrou, A. Hurault, and P. Queinnec.
+    On the Diversity of Asynchronous Communication.
+    FAC 28, 2016.
+  doi: http://doi.org/10.1007/s00165-016-0379-x
+  variants: [
+    - id: &e0001v0001
+      references: []
+      doc: >
+        Initial version of the example.
+      changes: [
+        add parallelism,
+        add inobservable tasks for taking coffee and working on exam
+      ]
+  ]
+
+- id: &e0002
+  name: Shift worker schedulling model
+  reference: >
+    Jeremy W. Bryans, Wei Wei.
+    Formal Analysis of BPMN Models Using Event-B.
+    FMICS 2010.
+  doi: http://doi.org/10.1007/978-3-642-15898-8_3
+  variants: [
+    - id: &e0001v0001
+      references: []
+      doc: >
+        Initial version of the example.
+      changes: [
+        add a merge gateway,
+        modify the data flows and add data-related annotations,
+        remove the timer on getting the response from workers
+      ]
+  ]
