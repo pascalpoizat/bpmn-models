@@ -135,16 +135,16 @@ More generally the original specification is very communication oriented, no &qu
       <bpmn2:outgoing>SequenceFlow_25</bpmn2:outgoing>
     </bpmn2:exclusiveGateway>
     <bpmn2:sequenceFlow id="SequenceFlow_23" sourceRef="ReceiveTask_4" targetRef="ExclusiveGateway_1"/>
-    <bpmn2:sequenceFlow id="SequenceFlow_24" name="choice == &quot;No&quot;" sourceRef="ExclusiveGateway_1" targetRef="ExclusiveGateway_2">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="FormalExpression_2" evaluatesToTypeRef="ItemDefinition_991" language="http://www.java.com/java">choice == &quot;No&quot;</bpmn2:conditionExpression>
+    <bpmn2:sequenceFlow id="SequenceFlow_24" name="choice == &quot;Yes&quot;" sourceRef="ExclusiveGateway_1" targetRef="ExclusiveGateway_2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="FormalExpression_2" evaluatesToTypeRef="ItemDefinition_991" language="http://www.java.com/java">decision == &quot;Yes&quot;</bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:parallelGateway id="ParallelGateway_5" gatewayDirection="Diverging">
       <bpmn2:incoming>SequenceFlow_25</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_26</bpmn2:outgoing>
       <bpmn2:outgoing>SequenceFlow_27</bpmn2:outgoing>
     </bpmn2:parallelGateway>
-    <bpmn2:sequenceFlow id="SequenceFlow_25" name="choice == &quot;Yes&quot;" sourceRef="ExclusiveGateway_1" targetRef="ParallelGateway_5">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="FormalExpression_3" evaluatesToTypeRef="ItemDefinition_991" language="http://www.java.com/java">choice == &quot;Yes&quot;</bpmn2:conditionExpression>
+    <bpmn2:sequenceFlow id="SequenceFlow_25" name="decision == &quot;No&quot;" sourceRef="ExclusiveGateway_1" targetRef="ParallelGateway_5">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="FormalExpression_3" evaluatesToTypeRef="ItemDefinition_991" language="http://www.java.com/java">decision == &quot;No&quot;</bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sendTask id="SendTask_5" name="send cancellation to teacher">
       <bpmn2:incoming>SequenceFlow_26</bpmn2:incoming>
@@ -769,7 +769,7 @@ More generally the original specification is very communication oriented, no &qu
         <di:waypoint xsi:type="dc:Point" x="1297.0" y="599.0"/>
         <di:waypoint xsi:type="dc:Point" x="1297.0" y="540.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_50">
-          <dc:Bounds height="11.0" width="60.0" x="1063.0" y="600.0"/>
+          <dc:Bounds height="11.0" width="65.0" x="1060.0" y="600.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_25" bpmnElement="SequenceFlow_25" sourceElement="BPMNShape_ExclusiveGateway_1" targetElement="BPMNShape_ParallelGateway_5">
@@ -777,7 +777,7 @@ More generally the original specification is very communication oriented, no &qu
         <di:waypoint xsi:type="dc:Point" x="857.0" y="515.0"/>
         <di:waypoint xsi:type="dc:Point" x="952.0" y="515.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_52">
-          <dc:Bounds height="11.0" width="65.0" x="870.0" y="516.0"/>
+          <dc:Bounds height="11.0" width="67.0" x="869.0" y="516.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_26" bpmnElement="SequenceFlow_26" sourceElement="BPMNShape_ParallelGateway_5" targetElement="BPMNShape_SendTask_5">
