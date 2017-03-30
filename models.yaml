@@ -56,7 +56,17 @@
     - id: &e0001v0001
       references: []
       doc: >
-        Initial version of the example.
+        Initial version of the example (Collaboration version).
+      changes: [
+        add parallelism,
+        add inobservable tasks for taking coffee and working on exam
+      ]
+    - id: &e0001v0002
+      references: []
+      doc: >
+        Initial version of the example (Choreography version).
+        Annotations are used on tasks that are not ChoreographyTasks
+        in order to denote the peers. Can relate to observables in peers.
       changes: [
         add parallelism,
         add inobservable tasks for taking coffee and working on exam
