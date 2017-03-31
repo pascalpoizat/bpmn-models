@@ -29,6 +29,7 @@ The (**unstable**) format of the file is:
   variants: [
     - id: &e0001v0001
       references: []
+      type: process # process / collaboration / choreography
       doc: >
         The description of variant 0001 of example 0001 (*e0001v0001).
         This may use several lines.
@@ -40,6 +41,7 @@ The (**unstable**) format of the file is:
       ]
     - id: &e0001v0002
       references: [*e0001v0001]
+      type: collaboration # process / collaboration / choreography
       doc: >
         The description of variant 0002 of example 0001 (*e0001v0002).
         This may use several lines.
@@ -51,6 +53,7 @@ The (**unstable**) format of the file is:
       ]
     - id: &e0001v0003
       references: [*e0001v0001,*e0001v0002]
+      type: choreography # process / collaboration / choreography
       doc: >
         The description of variant 0003 of example 0001 (*e0001v0003).
         This may use several lines.

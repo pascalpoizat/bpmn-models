@@ -12,6 +12,7 @@
 #  variants: [
 #    - id: &e0001v0001
 #      references: []
+#      type: process # process / collaboration / choreography
 #      doc: >
 #        The description of variant 0001 of example 0001 (*e0001v0001).
 #        This may use several lines.
@@ -23,6 +24,7 @@
 #      ]
 #    - id: &e0001v0002
 #      references: [*e0001v0001]
+#      type: collaboration # process / collaboration / choreography
 #      doc: >
 #        The description of variant 0002 of example 0001 (*e0001v0002).
 #        This may use several lines.
@@ -34,6 +36,7 @@
 #      ]
 #    - id: &e0001v0003
 #      references: [*e0001v0001,*e0001v0002]
+#      type: choreography # process / collaboration / choreography
 #      doc: >
 #        The description of variant 0003 of example 0001 (*e0001v0003).
 #        This may use several lines.
@@ -55,16 +58,18 @@
   variants: [
     - id: &e0001v0001
       references: []
+      type: collaboration
       doc: >
-        Initial version of the example (Collaboration version).
+        Initial version of the example.
       changes: [
         add parallelism,
         add inobservable tasks for taking coffee and working on exam
       ]
     - id: &e0001v0002
       references: []
+      type: choreography
       doc: >
-        Initial version of the example (Choreography version).
+        Initial version of the example.
         Annotations are used on tasks that are not ChoreographyTasks
         in order to denote the peers. Can relate to observables in peers.
       changes: [
@@ -83,6 +88,7 @@
   variants: [
     - id: &e0001v0001
       references: []
+      type: collaboration
       doc: >
         Initial version of the example.
       changes: [
